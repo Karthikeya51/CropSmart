@@ -67,7 +67,7 @@ CropSmart/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/cropsmart.git
+git clone https://github.com/Karthikeya51/cropsmart.git
 cd cropsmart
 ```
 
@@ -162,7 +162,7 @@ MIT License
 
 ## ✍️ Author
 
-Made with 💚 by [Your Name](https://github.com/yourusername)
+Made with 💚 by [Your Name](https://github.com/Karthikeya51)
 ```
 
 ---
