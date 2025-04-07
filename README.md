@@ -1,6 +1,4 @@
-Awesome! Here's a **complete and professional `README.md`** file for your **CropSmart** project — covering everything from project overview to setup, usage, and future enhancements.
 
----
 
 ```markdown
 # 🌱 CropSmart – Smart Farming with Precision Agriculture
