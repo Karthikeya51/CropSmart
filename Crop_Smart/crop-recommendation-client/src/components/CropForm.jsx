@@ -13,6 +13,7 @@ export default function CropForm() {
     ph: 7,
     rainfall: 0,
   });
+  const API_BASE_URL = "https://cropsmart-3xn0.onrender.com";
 
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
@@ -23,7 +24,7 @@ export default function CropForm() {
     setResult('');
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/predict', {
+      const response = await axios.post('API_BASE_URL/predict', {
         N: formData.nitrogen,
         P: formData.phosphorus,
         K: formData.potassium,
