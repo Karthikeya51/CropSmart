@@ -1,0 +1,80 @@
+:root {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  --primary-color: #198754;
+  --accent-color: #646cff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-body-bg: #121212;
+    --bs-body-color: #f8f9fa;
+    --accent-color: #8c94ff;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+button,
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Make forms and cards smoother */
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Utility tweaks */
+.container-fluid,
+.container {
+  padding: 2rem 1rem;
+}
+
+/* Responsive fix for smaller screens */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
