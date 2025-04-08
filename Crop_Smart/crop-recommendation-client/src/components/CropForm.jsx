@@ -4,6 +4,8 @@ import { Send } from 'lucide-react';
 import CropExplanation from './CropExplanation';
 
 export default function CropForm() {
+   const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
   const [formData, setFormData] = useState({
     nitrogen: 0,
     phosphorus: 0,
@@ -13,7 +15,7 @@ export default function CropForm() {
     ph: 7,
     rainfall: 0,
   });
-  const API_BASE_URL = "https://cropsmart-3xn0.onrender.com";
+
 
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
