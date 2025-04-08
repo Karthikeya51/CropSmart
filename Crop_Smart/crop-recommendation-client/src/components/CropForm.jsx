@@ -24,7 +24,7 @@ export default function CropForm() {
     setResult('');
 
     try {
-      const response = await axios.post('API_BASE_URL/predict', {
+     const response = await axios.post(`${API_BASE_URL}/predict`,{
         N: formData.nitrogen,
         P: formData.phosphorus,
         K: formData.potassium,
