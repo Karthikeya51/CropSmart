@@ -5,6 +5,8 @@ import axios from 'axios';
 import './CropDetail.css';
 
 export default function CropDetail() {
+  const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
   const [cropName, setCropName] = useState('');
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
@@ -16,7 +18,7 @@ export default function CropDetail() {
     setResult('');
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/gemini', {
+const response = await axios.post(`${API_BASE_URL}/gemini`, {
         crop_name: cropName,
       });
 
