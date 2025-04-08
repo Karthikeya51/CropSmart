@@ -6,7 +6,8 @@ const CropExplanation = ({ cropData, predictedCrop }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const API_BASE_URL = "https://cropsmart-3xn0.onrender.com";
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
     const fetchExplanation = async () => {
       try {
         const response =await axios.post(`${API_BASE_URL}/explain_crop`,  {
