@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 const CropExplanation = ({ cropData, predictedCrop }) => {
   const [explanation, setExplanation] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+
     const fetchExplanation = async () => {
       try {
         const response =await axios.post(`${API_BASE_URL}/explain_crop`,  {
