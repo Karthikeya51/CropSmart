@@ -15,13 +15,19 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 
 
 # ✅ Add CORS middleware to the existing app instance
+origins = [
+    "http://localhost:5173",
+    "https://crop-smart.vercel.app"
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # or ["http://localhost:5173"]
+    allow_origins=origins,           # ✅ specify allowed frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # ✅ Define input data model
 class CropInput(BaseModel):
