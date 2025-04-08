@@ -6,9 +6,10 @@ const CropExplanation = ({ cropData, predictedCrop }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const API_BASE_URL = "https://cropsmart-3xn0.onrender.com";
     const fetchExplanation = async () => {
       try {
-        const response =await axios.post('http://127.0.0.1:8000/explain_crop', {
+        const response =await axios.post(`${API_BASE_URL}/explain_crop`,  {
             N: cropData.nitrogen,
             P: cropData.phosphorus,
             K: cropData.potassium,
