@@ -3,9 +3,10 @@ import axios from 'axios';
 import { Send } from 'lucide-react';
 import CropExplanation from './CropExplanation';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export default function CropForm() {
-   const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+
   const [formData, setFormData] = useState({
     nitrogen: 0,
     phosphorus: 0,
