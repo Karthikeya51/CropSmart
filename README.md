@@ -154,14 +154,3 @@ MIT License
 
 Made with 💚 by Karthikeya.
 ```
-
----
-
-### ✅ What's Left for You to Do:
-- Replace:
-  - `yourusername`
-  - image URLs if you have screenshots
-  - deployment link (`your-deployed-link`)
-  - model training accuracy if you improve it
-
-Let me know if you want a **version with badges**, **GIF previews**, or **auto-deployment instructions** too!
