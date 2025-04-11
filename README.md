@@ -120,16 +120,6 @@ Expected Output: **Wheat**
 
 ---
 
-## 📸 Screenshots
-
-### 📱 Home Page
-![Home](https://your-screenshot-link)
-
-### 🌿 Crop Form
-![Form](https://your-screenshot-link)
-
----
-
 ## ✨ Future Enhancements
 
 - 🌎 Auto-fetch weather based on user location
@@ -144,7 +134,7 @@ Expected Output: **Wheat**
 
 ## 🌐 Live Demo
 
-👉 [CropSmart Live](https://your-deployed-link.vercel.app)
+👉 [[CropSmart Live](https://your-deployed-link.vercel.app)](https://crop-smart.vercel.app/)
 
 ---
 
