@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className="d-flex align-items-center gap-3">
           <a
-            href="#"
+            href="https://github.com/Karthikeya51"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted"
@@ -19,7 +19,7 @@ export default function Footer() {
             <i className="bi bi-github" style={{ fontSize: '1.25rem' }}></i>
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/karthikeya-gaddam-212b07304/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted"
