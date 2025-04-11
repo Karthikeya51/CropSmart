@@ -62,7 +62,7 @@ const response = await axios.post(`${API_BASE_URL}/gemini`, {
       <div className="text-center mb-5">
         <h2 className="fw-bold">Explore Detailed Crop Information</h2>
         <p className="text-muted fs-5">
-          Search for any crop or vegetable and get in-depth insights powered by Gemini AI
+          Search for any crop or vegetable and get in-depth insights.
         </p>
       </div>
 
@@ -83,7 +83,7 @@ const response = await axios.post(`${API_BASE_URL}/gemini`, {
 
           {loading && (
             <div className="alert alert-info mt-4 text-center" role="alert">
-              Fetching data from Gemini...
+              Fetching data...
             </div>
           )}
 
