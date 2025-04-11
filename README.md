@@ -152,7 +152,7 @@ MIT License
 
 ## ✍️ Author
 
-Made with 💚 by [Your Name](https://github.com/Karthikeya51)
+Made with 💚 by Karthikeya.
 ```
 
 ---
